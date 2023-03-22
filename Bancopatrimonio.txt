@@ -1,0 +1,7 @@
+CREATE TABLE Bancopatrimonio (
+  descricao_patrimonio VARCHAR(255) NOT NULL,
+  tipo_patrimonio VARCHAR(255) NOT NULL,
+  numero_patrimonio INT NOT NULL,
+  setor VARCHAR(255) NOT NULL,
+  valor DECIMAL(10,2) NOT NULL
+);

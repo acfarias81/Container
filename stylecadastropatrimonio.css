@@ -1,0 +1,153 @@
+
+@import url(https://fonts.googleapis.com/css?family=Exo:100,200,400);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
+
+body {
+	margin: 0;
+	font-family: 'Exo', sans-serif;
+    color: #fff;
+	font-size: 12px;
+}
+
+header {
+	background-color: #2656f5 !important;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	height: 60px;
+	padding: 0 20px;
+}
+
+
+.logo {
+	font-size: 24px;
+	font-weight: bold;
+	flex: 1;
+}
+
+nav {
+	flex: 1;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.menu-icon {
+	display: none;
+	cursor: pointer;
+	font-size: 20px;
+	padding: 10px;
+}
+
+.menu {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+.menu li {
+	margin: 0 10px;
+}
+
+.menu li a {
+	color: #fff;
+	text-decoration: none;
+	padding: 10px;
+	display: block;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #2656f5 !important;;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+form {
+    display: block;
+    margin-left: 10px;
+    flex-direction: column;
+}
+h1 {
+    margin-bottom: 10px;
+    padding-left: 10px;
+    color: #2656f5;
+}
+.form-group {
+    margin-bottom: 10px;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="number"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f2f2f2;
+    color: #333;
+    font-size: 16px;
+    
+}
+
+button[type="submit"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #2656f5;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    
+    
+}
+
+button[type="submit"]:hover {
+    background-color: #1c449f;
+  
+}
+
+
+@media (max-width: 768px) {
+	.menu {
+		display: none;
+	}
+
+	.menu-icon {
+		display: block;
+	}
+	
+	.menu-icon:hover {
+		background-color: #fff;
+		color: #4a4e69;
+		border-radius: 5px;
+	}
+	
+	#menu-toggle:checked ~ .menu {
+		display: flex;
+		flex-direction: column;
+		background-color: #4a4e69;
+		position: absolute;
+		top: 60px;
+		left: 0;
+		width: 100%;
+		padding: 10px;
+	}
+
+	
+	#menu-toggle:checked ~ .menu li {
+		margin: 10px 0;
+	}
+	
+	#menu-toggle:checked ~ .menu li a {
+		color: #fff;
+		text-align: center;
+	}
+}

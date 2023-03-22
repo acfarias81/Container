@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Patrimônio</title>
+    <link rel="stylesheet" href="./stylecadastropatrimonio.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Container - Sistema de Patrimônio</div>
+        <nav>
+            <ul class="menu">
+                <li><a href="./principal.html">Inicio</a></li>
+                <li><a href="./consultapatrimonio.html">Consultar Patrimônio</a></li>
+                <li><a href="#">Relatórios</a></li>
+                <li><a href="#">Usuários</a></li>
+                <li><a href="#">Configurações</a></li>
+                <li><a href="./index.html">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Cadastro de Patrimônio</h1>
+        <form>
+            <div class="form-group">
+                <label for="nome-bem">Nome do Bem:</label>
+                <input type="text" id="nome-bem" name="nome-bem" required>
+            </div>
+
+            <div class="form-group">
+                <label for="numero-patrimonio">Número do Patrimônio:</label>
+                <input type="text" id="numero-patrimonio" name="numero-patrimonio" required>
+            </div>
+
+            <div class="form-group">
+                <label for="tipo-bem">Tipo do Bem:</label>
+                <select id="tipo-bem" name="tipo-bem" required>
+                    <option value="">Selecione...</option>
+                    <option value="equipamento">Equipamento</option>
+                    <option value="mobiliário">Mobiliário</option>
+                    <option value="veículo">Veículo</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="setor">Setor:</label>
+                <input type="text" id="setor" name="setor" required>
+            </div>
+
+            <div class="form-group">
+                <label for="valor">Valor:</label>
+                <input type="number" id="valor" name="valor" required>
+            </div>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Seu Nome</p>
+    </footer>
+</body>
+</html>

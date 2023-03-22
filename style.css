@@ -1,0 +1,248 @@
+@import url(https://fonts.googleapis.com/css?family=Exo:100,200,400);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
+
+body{
+	margin: 0;
+	padding: 0;
+	background: #fff;
+
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 12px;
+}
+
+.body{
+	position: absolute;
+	top: -20px;
+	left: -20px;
+	right: -40px;
+	bottom: -40px;
+	/*width: auto;
+	height: auto;*/
+	background-image: url(./img/background.jpg);
+	background-size:cover;
+	-webkit-filter: blur(5px);
+	z-index: 0;
+	width: auto; 
+	height: auto;
+	overflow: hidden;
+}
+
+.grad{
+	position: absolute;
+	top: -20px;
+	left: -20px;
+	right: -40px;
+	bottom: -40px;
+	width: auto;
+	height: auto;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.65))); /* Chrome,Safari4+ */
+	z-index: 1;
+	opacity: 0.7;
+}
+
+.header{
+	position: absolute;
+	top: calc(50% - 35px);
+	left: calc(50% - 255px);
+	z-index: 2;
+}
+
+.header div{
+	float: left;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 35px;
+	font-weight: 200;
+}
+
+.header div span{
+	color: #5379fa !important;
+}
+
+.login{
+	position: absolute;
+	top: calc(50% - 75px);
+	left: calc(50% - 50px);
+	height: 150px;
+	width: 350px;
+	padding: 10px;
+	z-index: 2;
+}
+
+.login input[type=text]{
+	width: 250px;
+	height: 30px;
+	background: transparent;
+	border: 1px solid rgba(255,255,255,0.6);
+	border-radius: 2px;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+}
+
+.login input[type=password]{
+	width: 250px;
+	height: 30px;
+	background: transparent;
+	border: 1px solid rgba(255,255,255,0.6);
+	border-radius: 2px;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+	margin-top: 10px;
+}
+
+.login input[type=button]{
+	width: 260px;
+	height: 35px;
+	background: #fff;
+	border: 1px solid #fff;
+	cursor: pointer;
+	border-radius: 2px;
+	color: #a18d6c;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 6px;
+	margin-top: 10px;
+}
+
+.login input[type=button]:hover{
+	opacity: 0.8;
+}
+
+.login input[type=button]:active{
+	opacity: 0.6;
+}
+
+.login input[type=text]:focus{
+	outline: none;
+	border: 1px solid rgba(255,255,255,0.9);
+}
+
+.login input[type=password]:focus{
+	outline: none;
+	border: 1px solid rgba(255,255,255,0.9);
+}
+
+.login input[type=button]:focus{
+	outline: none;
+}
+
+::-webkit-input-placeholder{
+   color: rgba(255,255,255,0.6);
+}
+
+::-moz-input-placeholder{
+   color: rgba(255,255,255,0.6);
+}
+/*FINAL TELA LOGIN*/
+
+/*TELA PRINCIPAL*/
+body {
+	margin: 0;
+	font-family: 'Exo', sans-serif;
+}
+
+header {
+	background-color: #2656f5 !important;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	height: 60px;
+	padding: 0 20px;
+}
+
+
+.logo {
+	font-size: 24px;
+	font-weight: bold;
+	flex: 1;
+}
+
+nav {
+	flex: 1;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.menu-icon {
+	display: none;
+	cursor: pointer;
+	font-size: 24px;
+	padding: 10px;
+}
+
+.menu {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+.menu li {
+	margin: 0 10px;
+}
+
+.menu li a {
+	color: #fff;
+	text-decoration: none;
+	padding: 5px;
+	display: block;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #2656f5 !important;;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+@media (max-width: 768px) {
+	.menu {
+		display: none;
+	}
+
+	.menu-icon {
+		display: block;
+	}
+	
+	.menu-icon:hover {
+		background-color: #fff;
+		color: #4a4e69;
+		border-radius: 5px;
+	}
+	
+	#menu-toggle:checked ~ .menu {
+		display: flex;
+		flex-direction: column;
+		background-color: #4a4e69;
+		position: absolute;
+		top: 60px;
+		left: 0;
+		width: 100%;
+		padding: 10px;
+	}
+	
+	#menu-toggle:checked ~ .menu li {
+		margin: 10px 0;
+	}
+	
+	#menu-toggle:checked ~ .menu li a {
+		color: #fff;
+		text-align: center;
+	}
+}
+
+
+  
